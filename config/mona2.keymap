@@ -97,13 +97,22 @@
 
         MOUSE {
             bindings = <
-&kp ESCAPE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BASS_BOOST  &kp K_BACK                    &trans     &kp PAGE_DOWN   &kp UP_ARROW    &kp PAGE_UP      &trans
-&trans      &trans             &trans           &trans            &trans                &trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans      &trans             &trans           &trans            &trans      &trans    &trans  &trans     &trans          &trans          &trans           &trans
-&trans      &trans             &trans           &kp TAB           &trans      &trans    &trans  &kp SPACE                                                   &trans
+&kp ESCAPE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BASS_BOOST  &kp K_BACK                          &trans     &kp PAGE_DOWN   &kp UP_ARROW    &kp PAGE_UP      &trans
+&trans      &trans             &trans           &trans            &trans                   &trans     &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LANG1   &kp LANG2          &kp LANG3        &kp LANG4         &kp LANG5   &kp LANG6    &kp LANG7  &kp LANG8  &kp LANG9       &trans          &trans           &trans
+&trans      &trans             &trans           &kp TAB           &trans      &trans       &trans     &kp SPACE                                                   &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+            >;
         };
     };
 };
